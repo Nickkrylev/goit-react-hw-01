@@ -1,16 +1,14 @@
-import css from "./Transaction.module.css";
+// Import the CSS module
+import styles from "./Transaction.module.css";
 
-
-const TransactionListItem  = ({type,amount,currency}) => {
-
-    
+const TransactionListItem = ({ type, amount, currency }) => {
   return (
     <>
-    <td>{type}</td>
-    <td>{amount}</td>
-    <td>{currency}</td>
+      <td className={styles.type}>{type}</td>
+      <td className={styles.amount}>{amount}</td>
+      <td className={styles.currency}>{currency}</td>
     </>
   );
 };
 
-export default TransactionListItem ;
+export default TransactionListItem;
